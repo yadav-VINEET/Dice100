@@ -22,7 +22,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
       document.querySelector(".playercurrent" + activePlayer).textContent = roundScore;
 
     } else {
-      document.querySelector(".player" + activePlayer).style.backgroundColor="rgba(116, 213, 255, 0.59)";
+      document.querySelector(".player" + activePlayer).style.backgroundColor="#444444";
       nextPlayer();
 
 
@@ -44,13 +44,13 @@ function nextPlayer() {
   // document.querySelector('.player-0-panel').classList.toggle('active');
   // document.querySelector('.player-1-panel').classList.toggle('active');
 
-  document.querySelector(".player" + activePlayer).style.backgroundColor="rgba(116, 213, 255, 0.9)";
+  document.querySelector(".player" + activePlayer).style.backgroundColor="#3d4f69";
 
   document.querySelector('.dice').style.display = 'none';
 }
 
 document.querySelector('.btn-hold').addEventListener('click', function() {
-  document.querySelector(".player" + activePlayer).style.backgroundColor="rgba(116, 213, 255, 0.59)";
+  document.querySelector(".player" + activePlayer).style.backgroundColor="#444444";
 
   if (gamePlaying) {
     scores[activePlayer-1] += roundScore;
